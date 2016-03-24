@@ -1,0 +1,71 @@
+#popup_content{
+    width:220px; padding:10px; border: solid 1px black;
+    height:auto;
+    margin: 5px auto;
+    background-color:#ffffff;
+    min-height:170px;
+}
+
+div.popup_window{
+                position:absolute;display:none;top:0;left:0;z-index:1000;
+		background-image: url("../images/events/calendar_popup.png");
+		width:255px;
+		min-height:200px;             
+                padding:5px;
+}
+div.popup_img{ position:absolute; margin-left:150px; margin-top:-10px; border:solid 1px #dddddd; padding:1px; }
+
+div.popup_window p,.popup_window h4{margin-left:20px; color:brown; }
+
+div.popup_window hr {margin-top:6px; margin-bottom:6px;}
+  /* calendar */
+table.calendar { margin-top:30px;
+                 margin: 0px auto;
+                 border-left:1px solid #999; }
+tr.calendar-row	{  }
+td.calendar-day	{ min-height:80px; font-size:11px; position:relative; background:whitesmoke;} * html div.calendar-day { height:80px; }
+td.calendar-day h4{ float:left; margin-left:10px; width:80px; }
+td.calendar-day:hover { background:#eceff5; }
+
+
+td.calendar-day-np	{ background:#dddddd; min-height:80px; width:120px; height:80px; padding:5px; border-bottom:1px solid #999; border-right:1px solid #999; } * html div.calendar-day-np { height:80px; width:120px; height:80px; padding:5px; border-bottom:1px solid #999; border-right:1px solid #999;}
+td.calendar-day-head { font-size:13px; text-transform:uppercase; background:#ccc; font-weight:bold; text-align:center; width:120px; padding:5px; border-bottom:1px solid #999; border-top:1px solid #999; border-right:1px solid #999; }
+div.day-number		{
+    
+    color:black;
+    font-weight:bold;
+    float:right;
+    width:14px;
+    margin:0px 0px 46px 0;
+   
+     }
+/* shared */
+td.calendar-day,td.calendar-day-np { width:120px; height:80px; padding:5px; border-bottom:1px solid #999; border-right:1px solid #999; }
+
+.calendar_heading{margin-top:7px; border-bottom: solid 1px black;  padding-top:8px; background-image: url("../images/events/Brw_calendar_header.png"); background-repeat:no-repeat; height:32px;}
+
+.calendar_heading_golf{margin-top:7px; border-bottom: solid 1px black; padding-top:8px; background-image: url("../images/events/Grn_calendar_header.png"); background-repeat:no-repeat; height:30px;}
+
+.heading1{color:whitesmoke; margin:0px auto; width:300px; text-align:center; padding-top:5px; }
+
+.prev_month_link{ margin-left:22px; float:left; text-decoration:none; color:#222222; padding:14px; padding-left:17px; margin-top:32px; width:130px; text-align:left;
+background:url('../images/events/left_button.png') no-repeat left center;
+}
+.prev_month_link:hover{text-decoration:underline;}
+
+.prev_month_link_golf{
+    margin-left:22px; float:left; text-decoration:none; color:#222222; padding:14px;  padding-left:17px; margin-top:32px; width:130px; text-align:left;
+    background:url('../images/events/W_left_button.png') no-repeat left center;
+}
+.prev_month_link_golf:hover{text-decoration:underline;}
+
+.next_month_link {float:right; margin-top:5px; margin-right:23px; margin-top:5px; text-decoration:none; color:#222222; padding:14px; padding-right:17px; width:130px; text-align:right;
+background:url('../images/events/right_button.png') no-repeat right center;
+}
+.next_month_link:hover{text-decoration:underline;}
+
+.next_month_link_golf{
+    float:right; margin-top:5px; margin-right:23px; text-decoration:none; color:#222222; padding:14px; padding-right:17px; width:130px; text-align:right;
+    background:url('../images/events/W_right_button.png') no-repeat right center;
+}
+.next_month_link_golf:hover{text-decoration:underline;}

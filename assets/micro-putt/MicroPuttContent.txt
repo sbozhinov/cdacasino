@@ -1,0 +1,57 @@
+dont=remove
+
+
+This text file is for you to customise content in your game.
+Keep LABEL content very short, approx 50 letters.
+Delete entire LINK lines if not wanted.
+The GAMEURL should be your game page URL, users will share this on facebook.
+
+Note: This text file will only work when its uploaded to your server in the same folder as the swf file.
+
+
+******************** DO NOT USE 'AND' SIGNS ***********************
+*************** DO NOT CHANGE THE VARIABLE NAMES ******************
+******************* CHANGE CONTENT BELOW ONLY *********************
+
+
+&GAMENAME=We have 640 acres. You have one ball.
+&GAMEURL=http://www.cdacasino.com/golf_microput.html
+
+&MESSAGE=Welcome to Circling Raven's Own MicroPutt Game
+This may not be as challenging as our course 
+but it's almost as fun.
+Simply hover your mouse over the ball. 
+Slide back and click. 
+Compete against friends! When your done post your results on Facebook!
+
+
+&HIGHSCORES=yes
+
+
+
+&LABEL01=Top 100 Courses You Can Play Ð Golf Magazine
+
+&LINK01=http://www.cdacasino.com/golf.html
+
+
+
+&LABEL02=Join Us On Facebook!
+
+&LINK02=http://www.facebook.com/pages/Circling-Raven/344528951768?ref=search&sid=1384972889.4237631122..1
+
+
+
+&LABEL03=2010 PGA National Merchandiser of the Year!
+
+&LINK03=http://estore.cdacasino.com/zencart/
+
+
+&LABEL04=We Are Expanding Your Experience!
+
+&LINK04=http://www.cdacasino.com/expansion.html
+
+
+
+&LABEL05=Post Your Score On FaceBook!
+
+&LINK05=http://www.facebook.com

@@ -1,0 +1,1079 @@
+/*********************************************************************************************
+
+0.  CSS Reset
+
+*********************************************************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+img{border:none;}  /*global setting for images to have no border, useful for image links, like logo/quicklinks */
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/*********************************************************************************************
+
+1.  Basic Setup  -----------------------
+
+*********************************************************************************************/
+
+@font-face {
+    font-family: cronos;
+    src: url('cronospro-semibold-webfont.woff');
+}
+
+@font-face {
+    font-family: franklin;
+    src: url('frabk-webfont.woff') format("woff"),
+    url('frabk.ttf') format("truetype");
+}
+
+body {
+    background-image:url('../images/backgrounds/wood_vignette.jpg');
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-color:black;
+    width: auto; 
+    height: auto;
+    font-family: franklin, Helvetica, Arial, sans-serif;
+    font-size:13px;
+    line-height: 18px;
+    width:100%;
+    height:100%;
+}
+
+#wrapper {
+    width: 957px;
+    margin: 0px auto;
+    border:solid 3px black;
+    box-shadow: 0 0 13px .6px #111;
+    height:auto;
+}
+
+.wrapper_bg{    background-image:url('../images/backgrounds/MiddleBackground.jpg');
+                background-position:top center;
+                background-repeat: repeat-y;
+}
+
+
+h1 {
+    font-size: 20px;
+    margin: 0 0 2px 0;
+    font-family: helvetica, arial;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0 0 2px 0;
+    font-family: cronos, helvetica;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0 0 2px 0;
+}
+
+h4 {
+    font-size: 14px;
+    margin: 0 0 2px 0;
+    font-family:  cronos, arial;
+}
+.clear{
+    clear:both;
+}
+
+/*********************************************************************************************
+
+2.  Header & Menu Styles  --------------  header.php
+
+*********************************************************************************************/
+#header {
+    width: 957px;
+    height:110px;
+    float:left;
+    padding-top:4px;
+    padding-bottom:10px;
+    background-image:url('../images/backgrounds/header_bg.jpg');
+    background-position:top center;
+    background-repeat: repeat-y;
+}
+
+
+#navigation {
+    z-index:9999;
+    position:relative;
+    top:78px;
+    padding-top:10px;
+    height:40px;
+    display:block;
+    color:white;
+    text-transform:lowercase;
+}
+
+#left_nav_links{
+
+    float:left;
+    padding:0px 15px 0px 12px;
+    height:24px;
+}
+#left_nav_links ul li a{padding:3px 8px; }
+
+#navigation ul li a{
+    color:white;
+    background:#222;
+    border:1px solid #777;
+}
+
+#right_nav_links{
+
+    float:right;
+    height:24px;
+    padding:0px 5px;
+    margin-right:-5px;
+    width:355px;
+
+}
+#right_nav_links ul li a{ padding:3px 6px;}
+
+#navigation ul li{
+    display:block;
+    margin-top:2px;
+    list-style-type:none;
+    float:left;
+    padding-left:8px;
+    font-size:15px;
+    
+}
+
+#navigation ul li ul li a{background:none;
+                          
+                          border:none;
+                          /*   sb:052986        padding-left:-8px;
+                                              padding-right:-5px;*/
+                          display:block;
+}
+
+
+#navigation ul li ul li a:hover{
+
+    background:#222;
+    color:#ffaa33;
+    text-decoration:underline;
+
+}
+
+#navigation li a{
+    color:white;
+    display:block;
+    text-decoration:none;
+    position:relative;
+}
+
+
+#navigation li:hover > a{
+    color:#ffaa33;
+
+}
+
+
+#navigation ul li ul {
+    z-index:9999;
+    position:absolute;
+    display:none;
+    width: auto;
+    padding: 3px 0px 3px 0px;
+    border:1px solid #333;
+    background-image:url('../images/header/menu_dropdown.png');
+
+}
+
+
+#navigation li:hover ul, #navigation li.hover ul {
+    z-index:9999;
+    display:block;
+    position:absolute;
+    width:142px;
+
+}
+
+
+#navigation li:hover li {
+    float: left;
+
+}
+
+#navigation li:hover li a {
+    font-size:14.6px;
+    padding:5px 1px 5px 5px;
+    width:136px;
+    height:20px;
+    margin-left:-8px;
+}
+
+#selected {color:#ffaa33 !important;}
+
+
+
+#cda_logo {
+    z-index:10000;
+    position:relative;
+    left:330px;
+    width:257px;
+    top:-46px;
+    padding-bottom:10px;
+}
+
+
+/*********************************************************************************************
+
+3.  Main Content Styles ----------------  
+
+*********************************************************************************************/
+
+#main {
+    min-height:520px;
+    background-image:url('../images/backgrounds/GoldTrapezoid_Purple.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    padding-top:10px;
+    border-top:3px solid #412d00;
+}
+
+
+
+
+/*apply different color class to the main to change background image to a different color stripe, listed below */
+#main_navy{min-height:520px;
+           background-image:url('../images/backgrounds/GoldTrapezoid_Navy.png');
+           background-repeat:no-repeat;
+           background-position:top center;
+           padding-top:10px;
+           border-top:3px solid #412d00;
+}
+#main_pink{min-height:520px;
+           background-image:url('../images/backgrounds/GoldTrapezoid_Pink.png');
+           background-repeat:no-repeat;
+           background-position:top center;
+           padding-top:10px;
+           border-top:3px solid #412d00;
+}
+
+.redorange{background-image:url('../images/backgrounds/GoldTrapezoid_RedOrange.png') !important;}
+
+#main_orange{
+    min-height:520px;
+    background-image:url('../images/backgrounds/GoldTrapezoid_Yellow.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    padding-top:10px;
+    height:auto;
+    border-top:3px solid #412d00;
+}
+
+#main_maroon{
+    min-height:520px;
+    background-image:url('../images/backgrounds/GoldTrapezoid_Maroon.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    padding-top:10px;
+    border-top:3px solid #412d00;    
+}
+
+#main_green{
+    min-height:520px;
+    background-image:url('../images/backgrounds/GoldTrapezoid_Green.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    padding-top:10px;
+    border-top:3px solid #412d00;
+}
+
+#main_lightgray{
+    min-height:545px;
+    background-image:url('../images/backgrounds/GoldTrapezoid_LGray.png');
+    background-repeat:no-repeat;
+    background-position:top center;
+    border-top:3px solid #412d00;
+    padding-top:10px;
+}
+#main_secondary{
+    border-top:3px solid #412d00;
+    height:auto;
+    padding-bottom:30px;
+}
+#main_secondary{
+    border-top:3px solid #412d00;
+    height:auto;
+    padding-bottom:25px;
+}
+/************styling for the "picture box" on the pages, which can includes image slides, sometimes text***/
+#main_content{ width:896px;
+               height:345px;
+               margin: 0px auto;
+               border:solid 4px #412d00;
+               
+
+}
+#main_content li{margin-left:15px;}
+#slide1{  }
+
+/****************styling for the text below the "picture box" **********/
+
+#page_content{
+    position:absolute;
+    width:708px;
+    float:left;
+    margin-top:64px;
+    height:auto;
+    margin-left:28px;
+    color:white;
+    z-index:9999;
+}
+
+#width{width:896px;}
+
+#page_content h2{
+
+    text-shadow: #111 2px 2px 3px;
+    height: 1em;
+
+    filter: Shadow(Color=#000000,
+        Direction=0,
+        Strength=3);
+}
+#page_content p{
+    text-shadow: #111 2px 3px 3px;
+    letter-spacing:.1px;
+    filter: Shadow(Color=#000000,
+        Direction=0,
+        Strength=3);
+}
+
+#page_content h4{
+    text-shadow: #111 0.3em 0.4em 2em;
+    filter: Shadow(Color=#111111,
+        Direction=135,
+        Strength=4);
+    text-decoration:none;
+
+}
+
+#page_content a{color:#ffaa33;}
+
+#page_content a:hover {color:#ddaa77;}
+
+#page_content h4 a{text-decoration:underline;}
+
+/*********************************************************************************************
+
+5.  Sidebar and Widgets  ---------------  
+
+*********************************************************************************************/
+
+
+.right{float:right;}
+
+
+.text_box{
+    padding-left:10px;
+    padding-right:3px;
+    padding-top:15px;
+    color:white;
+    width:533px;
+    height:330px;
+    float:right;
+}
+
+.text_box p{padding:3px;}
+
+.text_box h2{padding:4px 1px;
+
+}
+
+.text_box a{color:#ddaa77;}
+
+.text_box h4{font-family:cronos,helvetica;}
+
+
+/*********************************************************************************************
+
+6.  Footer Styles  ---------------------  footer.php
+
+*********************************************************************************************/
+#media_links{
+    position:absolute;
+    float:right;
+    height:35px;
+    width:140px;
+    top:34px;
+    left:820px;
+}
+#media_links li{ float:left;}
+#media_links img {padding-right:14px;}
+
+#footer{
+    position:relative;
+    background-image:url('../images/footer/footer.png');
+    background-repeat: no-repeat;
+    background-position:0px 0px;
+    width:957px;
+    height:107px;
+    margin-top:auto;
+    text-align:center;   
+}
+
+#footer a{
+    color:white;
+    text-decoration:none;
+}
+
+#footer li a:hover{
+    color:#ddaa77;
+}
+
+#footer ul{margin-left:85px;}
+
+#footer ul li {
+    list-style-type:none;
+    float:left;
+    font-size:12px;
+    margin-top:78px;
+    padding-right:2px;
+    color:white;
+}
+
+#second_footer{
+    font-family:arial, helvetica;
+    width:957px;
+    height:60px;
+    background:#512d00;
+    text-align:center;
+    color:black;
+}
+
+#second_footer p{
+    padding-top:1px;
+    font-size:11px;
+}
+
+#second_footer ul li {
+    list-style-type:none;
+    float:left;
+    font-size:12px;
+    padding:0px 3px;
+}
+
+#second_footer ul{position:absolute;
+                  margin-left:240px;
+                  margin-top:-25px;}
+
+#second_footer a{
+    color:black;
+    text-decoration:none;
+}
+
+#second_footer li a:hover{
+    color:#ddaa77;
+}
+
+/*******************individual pages below this line****************************/
+
+
+
+/*******************restaurants/overview*************************************************/
+
+#restaurants_overview {list-style-type:none;
+                       float:left;
+                       border-left:1px solid #412d00;
+                       border-right:1px solid #412d00;
+}
+
+#restaurants_overview li{
+    margin: 0;
+    padding:0;
+    float:left;
+    width:294px;
+    height:112px;
+    border:solid 2px #412d00;
+}
+
+#restaurants_overview li:hover{  
+    opacity:.9;
+}
+
+#restaurants_overview li img{
+    width:294px;
+    height:112px;
+}
+
+/********************restaurants/ barwelukws *************************************/
+
+#barwelukws_logo{
+    position:absolute;
+    margin-left:-10px;
+    margin-top:-6px;
+    z-index:1;
+}
+
+/********************restaurants/foodcourt*************************************/
+
+/********************restaurants/highmtgrill*************************************/
+
+
+/********************restaurants/sweetgrass_cafe*************************************/
+
+
+/********************restaurants/highmt_buffet*************************************/
+
+#highmtbuffet_logo{position:absolute;
+                   margin-left:-7px;
+                   margin-top:-6px;
+                   z-index:1;}
+
+#highmtbuffetlogo{position:absolute;
+                  margin-left:-20px;
+                  margin-top:-10px;
+                  z-index:1;
+}
+
+#highmt_buffetbox {background:#231f20;
+
+                   width:600px;
+}
+#highmt_buffetbox p ,#highmt_buffetbox h2,#highmt_buffetbox h4{margin-left:15px;}
+
+
+#highmt_slider {width:283px; height:345px;}
+
+/********************restaurants/banquets*************************************/
+#banquets_box{
+    background:#8b8d09;
+    float:right;
+    width:300px;
+}
+
+#banquets_box a{color:#ddaa77; }
+
+#banquets_slider {width:583px; height:345px;}
+
+/********************restaurants/tselusm*************************************/
+#steakhouse_box{background:#231f20;
+                float:right;
+                width:300px;
+                padding-left:30px;
+                padding-right:13px;
+}
+.steakhouse_hours p{padding-top:3px;
+                    padding-bottom:9px;
+}
+
+#steakhouse_slider{width:553px; height:345px;}
+
+/********************gaming/overview*************************************/
+#gaming_overview {
+    background:#b60839;
+}
+
+#col_left{
+    width:250px;
+    float:left;
+}
+
+#col_right{
+    float:right;
+    width:240px;
+}
+#gaming_overview_slider{width: 350px; height:345px;}
+
+#gaming_overview p{padding:6px;}
+
+#gaming_overview h2{padding:5px;}
+
+/********************gaming/newsletter*************************************/
+
+#newsletter_pic{float:left;}
+
+#bearpawlogo{
+    position:absolute;
+    margin-left:-350px;
+    margin-top:-10px;
+    z-index:1;
+}
+
+#OptIn{margin-left:300px;
+       position:absolute;
+}
+
+#newsletter_box{width:312px;
+                background: #567f28;
+                background-image: url(../images/backgrounds/green_texture.jpg);
+                height:330px;
+}
+/********************gaming/bingo*************************************/
+
+#bingo_box{background:#231f20;
+           padding:10px 30px 30px 30px;
+           height:305px;
+           width: 460px;}
+
+#bingo_col1{width:170px; float:left; }
+
+#bingo_col2{width:220px; 
+            float:right;
+            margin-right:50px; }
+
+#bingo_box a {text-align:center;
+              color:white;
+              position:absolute;
+              margin-top:130px;}
+
+#italic em{
+    font-family:arial;
+    font-style:italic;}
+
+#bingo_slider{width:376px; height:345px;}
+/**********gaming/rewardsclub*******************************************/
+
+#rewards_club_box{width:580px;
+                  background:#231f20;
+}
+
+#rewards_club_col1{width:290px;
+                   float:left;
+                   padding-left:20px;
+}
+
+#rewards_club_col2{width:250px;
+                   float:right;
+}
+
+#rewards_club_slider{ width:303px; height:345px;}
+
+/********************gaming/slots*************************************/
+#slots_box{background:#9353a1;
+           padding-left:10px;
+           padding-top:15px;
+           color:white;
+           width:596px;
+           height:330px;
+           float:right;
+}
+#slots_col2{
+    padding-left:10px;
+    width:275px;
+    float:right;
+}
+
+#slots_box h2{padding:5px 0px;}
+
+#slots_box p{padding-right:3px;}
+
+#slots_box h4{padding:5px 0px;
+}
+
+#slots_box a{color:#ddaa77;}
+
+#slots_slider{width:287px; height:345px;}
+
+/***********hotel/conferences*********************************************/
+/*************^^^^see banquets section *********/
+
+
+/***********hotel/sunrisetour*********************************************/
+.sunrisetour_bg{background-image: url(../images/backgrounds/texture_gold.jpg);
+
+}
+
+#sunrise_text{width:550px;
+              margin-top:50px;
+              margin-left:7px;              
+}
+
+.sunrise_quicklinks ul#controls li a:hover {color:black;}
+
+.sunrise_quicklinks ul#controls li.numeric.current a {color:black;}
+
+
+/***********hotel/sunsettour*********************************************/
+
+.sunsettour_bg{background-image: url(../images/backgrounds/texture_purple.jpg); }
+
+#sunset_text{width:550px;
+             margin-top:50px;
+             margin-left:7px;
+             color:white;
+             height:70px;
+
+}
+
+
+/********************golf/groupevents*************************************/
+
+#golf_group{
+    background:#af6227;
+    width:360px;
+}
+#golfgroup_slider{width:520px; height:345px;}
+
+/********************golf/dailyrates*************************************/
+#dailyrates_box{
+    background: #567f28;
+    background-image: url(../images/backgrounds/green_texture.jpg);
+    float:right;
+    width:500px;
+}
+
+#rates_pic{
+    width:300px;
+    float:left;
+}
+
+.dailyrates_col1{width: 220px; float:left;}
+
+.dailyrates_col2{width: 270px; float:right;}
+
+
+/********************golf/microputt*************************************/
+
+#microputt_box{float:right;
+               width:325px;
+               background: #567f28;
+               background-image: url(../images/backgrounds/green_texture.jpg);
+}
+
+#game_box object{  }
+
+#game_box{width: 558px;
+          height:345px;
+          float:left;
+          background: #678642;
+}
+
+#microputt_box a{color:#ddaa77;}
+
+/********************golf/coursetour*************************************/
+
+.coursetour_bg{background-color:#CBCC68;
+               background-image: url(../images/backgrounds/green_texture.jpg);
+}
+
+.golftour_heading{font-size:17px;
+                  padding-right: 6px;
+                  font-weight:600;
+                  margin-left:-33px;
+                  line-height:38px;
+}
+.golftour_heading2{font-size:17px;
+                   padding-right: 6px;
+                   font-weight:600;
+                   margin-left:22px;
+                   line-height:40px;
+}
+.caption2{margin-left:-24px;
+          margin-top:4px;
+}
+/********************directions/bycar*************************************/
+#bycar_box{width:492px;
+           height:310px;
+           background:#222;
+           padding:15px 15px 20px 15px;
+           color:white;
+           float:right;
+}
+#bycar_box p{ padding:5px 40px 5px 0px;}
+
+#bycar_box h4{ padding:5px 0px;}
+
+#bycar_map{background:white;
+           width:auto;
+           height:345px;
+           float:left;
+}
+
+#bycar_box a{color:#ddaa77;}
+
+/********************directions/byshuttle*************************************/
+#byshuttle_box{width:542px;
+               height:310px;
+               background:#222;
+               padding:15px 15px 20px 15px;
+               color:white;
+               float:right;
+}
+#byshuttle_box p{ padding:5px 5px 5px 0px;}
+
+#byshuttle_box ul{float:left; 
+                  margin-top:10px;
+                  margin-left:35px;}
+
+#byshuttle_box h4{ padding:5px 0px;}
+
+#byshuttle_map{background:white;
+               width:324px;
+               height:345px;
+               float:left;
+               overflow:hidden;
+}
+
+#shuttle_column{margin-top:10px;
+                float:left;}
+
+
+
+#byshuttle_box a{color:#ddaa77;}
+
+#bus_times{float:right;
+           margin-right:30px;}
+
+/********************directions/localtransit*************************************/
+.local_transit_box{text-align:center;
+                   width:650px;
+                   height:345px;
+                   background:black;
+                   float:right;
+}
+.local_transit_box img{margin-top:13px;}
+
+/********************root/contact*************************************/
+#contact_box{width:525px;
+             height:310px;
+             background:#222;
+             padding:15px 15px 20px 15px;
+             color:white;
+             float:right;}
+
+#contact_pic{width:341px; height: 345px;float:left;
+
+}
+
+#contact_box a{color:#ddaa77;}
+
+.col_contact{width:175px;
+             float:left;
+}
+
+
+
+/********************root/about us*************************************/
+#about_box{width:525px;
+           height:310px;
+           background:#af6327;
+           background-image: url(../images/backgrounds/texture_bronze.jpg);
+           padding:15px 15px 20px 15px;
+           color:white;
+           float:right;
+
+}
+
+ #about_slider  { width:338px; height:345px;}
+
+
+/********************root/privacy and 404.php *************************************/
+#privacy_box{width:866px;
+             height:310px;
+             background:#222222;
+             padding:15px 15px 20px 15px;
+             color:white;
+             float:left
+}
+
+.col_privacy{width:400px;
+             padding-right:20px;
+             float:left;
+}
+
+#privacy_box a{color:#ddaa77;}
+
+.list_indent{margin-left:15px;}
+
+/********************root/donations   uses styling from root/privacy*************************************/
+
+
+
+/***********root/sitemap************/
+
+.sitemap{background:#222222; 
+         height:auto;
+         text-transform: capitalize;
+
+}
+.sitemap_bg{background:#222;}
+
+.sitemap a {color:white;}
+
+.sitemap li{ padding:2px 0px;
+             margin-left:18px;
+}
+
+.sitemap li a:hover{color:#ddaa77;}
+
+
+.sitemap_col{margin-top:25px;
+             padding-bottom:10px;
+             margin-left:15px;
+             background:#222;
+             padding-left:40px;
+             height:450px;
+             width:260px;
+             float:left;
+}
+#sitemap_mid_col{
+    border-left:solid 2px #aaa;
+    border-right:solid 2px #aaa;
+}
+
+/************root/commerce************/
+#main_commerce{
+    padding-top:10px;
+    border-top:solid 3px #412d00;
+    height:500px;
+}
+
+.commerce_link_image{
+    padding:0px 0px 0px 10px;
+    margin-top:30px; float:left;  }
+
+.link_container{padding-left:150px;}
+
+.commerce_link_image img:hover{border-bottom:2px solid white;}
+
+.commerce_bg{
+    background:#9f570e;
+    background-image: url(../images/backgrounds/texture_bronze.jpg);
+}
+
+/*****************slideshow styling****************************************/
+
+
+
+/**************************EASY SLIDER 1.7(for quicklinks)********************/
+
+#slider ul li img {overflow:hidden; z-index:-1;}
+
+#q_slider{
+    position:relative;
+    left:722px;
+    top:51px;
+}
+
+#q_slider ul, #q_slider li{
+    margin:0;
+    list-style:none;
+}
+#q_slider li{
+    /*
+   define width and height of list item (slide)
+   entire slider area will adjust according to the parameters provided here
+    */
+    text-align:center;
+    width:236px;
+    height:80px;
+    overflow:hidden;
+}
+
+#controls{list-style-type:none;
+          position:relative;
+          margin-left:775px;
+          margin-top:45px;
+          width:190px;
+          height:14px;
+          z-index:99;
+}
+
+#controls li{float:left; padding:0px 5px;}
+
+#controls li a{color:white;}
+
+ul#controls li.numeric.current a{color:#ffaa33;}
+
+#controls li a:hover {color:#ffaa33;}
+
+
+/**************************Nivo Slider (for main banner images)********************/
+
+#slider{position:absolute; height:345px; width:896px; }
+
+.nivoSlider {
+    
+    position:relative;
+    background:url(../images/pdf_lightbox_iconsets/ajax-loader.gif) no-repeat 50% 50%;
+    list-style-type:none;
+}
+
+.nivoSlider img {    
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+.nivoSlider .nivo-controlNav {
+                       position:absolute;
+                       right:8px;
+                       margin-top:323px;
+                       z-index:9;
+}
+
+.nivo-controlNav a {
+    cursor:pointer;
+    display:inline;
+    width:22px;
+    height:22px;
+    background:url(../images/backgrounds/bullets.png) no-repeat;
+    text-indent:-9999px;
+    border:0;
+    margin-right:8px;
+    float:left;
+}  
+
+.nivo-controlNav a.active {
+    background-position:0 -22px;
+}  
+
+
+/***********tour/gallery >> included in galleriffic-2.css ******************************************************/
+
+
+/*****google search******************/
+
+#search{position:absolute;
+        margin-left:770px;
+        width:300px;
+        margin-top:20px;
+}
+
+.search_text {
+    background:#333;
+    color:white;
+    font-style: italic;
+
+    width:133px;
+}
+.search_text:focus{font-style:normal; width:133px;  }
+
+#search #submit{
+    border:0;
+    height:22px; width:22px; background: url(../images/header/search.png);
+    background-position:top center;
+    text-indent:-9999px;
+    font-size:4px;
+}
+
+#search #submit:hover{
+    background: url(../images/header/search.png);
+    background-position:bottom center;
+}
+
+.search_bg{background-color: #663300;}
+
+#search_results_page{border-top:3px solid #412d00;}
